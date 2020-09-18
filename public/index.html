@@ -5,64 +5,62 @@
     <title>Writer's Block Landing</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="bg-gray-100 text-indigo-800">
-      <nav
-        class="fixed bg-gray-100 w-full z-10 border-b border-solid border-gray-200"
-      >
-        <!-- left side mobile -->
-        <div
-          class="container mx-auto px-4 py-2 flex justify-between items-center"
+  <body class="font-sans">
+    <header
+      class="lg:px-16 px-8 bg-gray-100 flex flex-wrap items-center py-4 shadow-md"
+    >
+      <!-- left -->
+      <div class="flex-1 flex justify-between items-center">
+        <img
+          src="../images/icon-small.png"
+          alt="logo"
+          class="mr-2 cursor-pointer"
+        />
+      </div>
+      <label for="menu-toggle" class="cursor-pointer md:hidden block">
+        <svg
+          class="fill-current text-indigo-600 hover:text-indigo-400 transition ease-in duration-150 h-6 w-6"
+          viewBox="0 0 20 20"
+          xmlns="http://wwww.w3.org/2000/svg"
         >
-          <img
-            src="../images/icon-small.png"
-            alt="logo"
-            class="mr-2 cursor-pointer"
-          />
-          <div class="block md:hidden">
-            <button
-              type="button"
-              class="flex items center text-indigo-600 hover:text-indigo-400 transition ease-in duration-150"
-            >
-              <svg
-                class="fill-current h-6 w-6 fill-current"
-                viewBox="0 0 20 20"
-                xmlns="http://wwww.w3.org/2000/svg"
-              >
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
-          </div>
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </label>
+      <input type="checkbox" class="hidden" id="menu-toggle" />
+      <!-- right -->
 
-          <!-- right side mobile -->
-          <div class="flex items-center">
-            <ul class="inline-flex">
-              <ul class="px-2 pt-2 pb-4 md:hidden">
-                <li>
-                  <a
-                    href="#"
-                    class="block px-2 py-1 text-gray-800 font-semibold rounded hover:bg-gray-300"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="mt-1 block px-2 py-1 text-gray-800 font-semibold rounded hover:bg-gray-300"
-                    >Writer Opportunities</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="mt-1 block px-2 py-1 text-gray-800 font-semibold rounded hover:bg-gray-300"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </ul>
-          </div>
-        </div>
+      <nav class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+        <ul class="md:flex items-center justify-between pt-4 md:pt-0">
+          <li>
+            <a
+              class="md:p-4 py-3 px-1 block font-semibold rounded text-gray-700 hover:text-gray-900 hover:bg-gray-300"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:p-4 py-3 px-1 block font-semibold rounded text-gray-700 hover:text-gray-900 hover:bg-gray-300"
+              href="#"
+              >Writing Opportunities</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:p-4 py-3 px-1 block font-semibold rounded text-gray-700 hover:text-gray-900 hover:bg-gray-300"
+              href="#"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:p-4 py-3 px-1 block font-semibold rounded text-gray-700 hover:text-gray-900 hover:bg-gray-300"
+              href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
