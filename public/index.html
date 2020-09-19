@@ -65,56 +65,62 @@
     </header>
     <main>
       <section
-        class="section-hero text-indigo-100 md:flex justify-between py-40 md:py-64 px-10 bg-gradient-to-r from-purple-600 to-indigo-600 text-indigo-100"
+        class="text-indigo-100 py-40 md:py-64 px-10 bg-gradient-to-r from-purple-600 to-indigo-600 text-indigo-100"
+        id="section-hero"
       >
-        <!-- left -->
-        <div class="text-center lg:text-left lg:w-1/2 mb-0 md:px-6 md:mb-10">
-          <h1
-            class="text-2xl font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-gray-100 mb-4 md:mb-6"
-          >
-            Hi, we're
-            <span class="p-2 bg-teal-500 rounded text-teal-800 font-bold"
-              >Writer's Block</span
+        <div class="container mx-auto flex md:flex justify-between">
+          <!-- left -->
+          <div class="text-center lg:text-left lg:w-1/2 mb-0 md:px-6 md:mb-10">
+            <h1
+              class="text-2xl font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-gray-100 mb-4 md:mb-6"
             >
-          </h1>
-          <h2 class="text-xl md:text-2xl font-semibold mb-2">
-            The world's up and coming social storytelling platfrom
-          </h2>
-          <p class="text-lg md:text-xl text-indigo-200 mb-8">
-            WB connects a global community of 80 million readers and writers
-            through the power of story.
-          </p>
+              Hi, we're
+              <span class="p-2 bg-teal-500 rounded text-teal-800 font-bold"
+                >Writer's Block</span
+              >
+            </h1>
+            <h2 class="text-xl md:text-2xl font-semibold mb-2">
+              The world's up and coming social storytelling platfrom
+            </h2>
+            <p class="text-lg md:text-xl text-indigo-200 mb-8">
+              WB connects a global community of 80 million readers and writers
+              through the power of story.
+            </p>
 
-          <a
-            href="#"
-            class="font-semibold inline-block text-xs md:text-lg py-3 px-6 bg-gray-500 hover:bg-gray-400 text-gray-800 hover:text-gray-700 mr-2 transform hover:scale-110 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded uppercase"
-            >Login</a
-          >
-          <a
-            href="#"
-            class="font-semibold inline-block text-xs md:text-lg py-3 px-6 bg-yellow-500 hover:bg-yellow-400 text-yellow-800 hover:text-yellow-700 transform hover:scale-110 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded uppercase"
-            >Sign Up</a
-          >
-        </div>
-        <!-- right -->
-        <div class="lg:w-1/2 md:px-6">
-          <img
-            src="../images/hero.png"
-            alt="Writer's Block initials"
-            class="hidden lg:inline-flex md:auto lg:w-full"
-          />
+            <a
+              href="#"
+              class="font-semibold inline-block text-xs md:text-lg py-3 px-6 bg-gray-500 hover:bg-gray-400 text-gray-800 hover:text-gray-700 mr-2 transform hover:scale-110 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded uppercase"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="font-semibold inline-block text-xs md:text-lg py-3 px-6 bg-yellow-500 hover:bg-yellow-400 text-yellow-800 hover:text-yellow-700 transform hover:scale-110 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded uppercase"
+              >Sign Up</a
+            >
+          </div>
+          <!-- right -->
+          <div class="lg:w-1/2 md:px-6">
+            <img
+              src="../images/hero.png"
+              alt="Writer's Block initials"
+              class="hidden lg:inline-flex md:auto lg:w-full"
+            />
+          </div>
         </div>
       </section>
-      <section class="section-writing py-16 px-10 md:py-34 lg:py-48">
+      <section
+        class="container mx-auto section-writing py-16 px-10 md:py-34 lg:py-48"
+      >
         <h3
-          class="section-primary--main text-xl md:text-3xl mb-4 md:mb-20 font-bold text-center"
+          class="text-xl md:text-3xl mb-4 md:mb-20 font-bold text-center"
+          id="section-primary--main"
         >
           ⎗ Writing Opportunities ⎘
         </h3>
         <div class="flex flex-wrap text-center md:mb-16">
           <div class="md:text-left text-gray-700 md:w-1/2 md:px-10">
             <h4
-              class="text-md md:text-xl text-gray-800 font-semibold mb-2 md:mb-4"
+              class="text-md md:text-xl lg:text-2xl text-gray-800 font-semibold mb-2 md:mb-4"
             >
               Get adapted to a movie or TV series 🎥
             </h4>
@@ -130,7 +136,9 @@
               >
               works with partners <u>such as:</u>
             </p>
-            <ul class="flex justify-center md:justify-start text-center mb-6">
+            <ul
+              class="flex justify-center md:justify-start text-center mb-8 md:mb-0"
+            >
               <li class="mr-4">
                 <a href="https://hulu.com" target="_blank" class="hover:bord">
                   <img
@@ -159,13 +167,13 @@
             />
           </div>
         </div>
-        <div class="flex items-center flex-wrap">
+        <div class="flex flex-col-reverse md:flex-row items-center">
           <div class="md:w-1/2 md:px-10">
             <img src="../images/img-1.png" alt="books" class="md:w-auto" />
           </div>
           <div class="md:text-left text-gray-700 md:w-1/2 md:px-10">
             <h5
-              class="text-center md:text-left text-xl md:text-3xl text-gray-800 font-semibold mb-2 md:mb-4"
+              class="text-center md:text-left text-md md:text-xl lg:text-2xl text-gray-800 font-semibold mb-2 md:mb-4"
             >
               Get published 📘
             </h5>
@@ -178,7 +186,7 @@
             <a
               href="#"
               target="_blank"
-              class="font-semibold inline-block md:text-md py-2 px-4 md:py-4 md:px-6 bg-indigo-500 hover:bg-indigo-400 text-indigo-800 hover:text-indigo-700 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded"
+              class="font-semibold inline-block text-sm md:text-md mb-8 md:mb-0 py-1 px-3 md:py-2 md:px-4 lg:py-3 lg:px-5 bg-indigo-500 hover:bg-indigo-400 text-indigo-800 hover:text-indigo-700 shadow-md hover:shadow-lg transition ease-in-out duration-150 rounded"
               >Checkout out some of our recents →</a
             >
           </div>
