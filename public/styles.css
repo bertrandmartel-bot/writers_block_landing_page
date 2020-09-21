@@ -24,14 +24,18 @@ body {
   margin: 0;
 }
 
-.section-primary--main {
-  background-image: linear-gradient(to right, #805AD5, #5F65D8);
+#section-primary--main,
+#section-primary--main-2 {
+  background-image: linear-gradient(to right,#330867 0%, #30CFD0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
+  text-transform: uppercase;
   filter: drop-shadow(1px 1px 2px #333);
 }
+
+
 
 #menu-toggle:checked + #menu {
   display: block;
